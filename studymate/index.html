@@ -171,20 +171,6 @@
   </script>
 
   <!-- Dark Mode Toggle -->
-  <script>
-    const darkToggle = document.createElement('button');
-    darkToggle.innerText = '🌓';
-    darkToggle.className = 'fixed bottom-4 right-4 z-50 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800';
-    darkToggle.onclick = () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      document.body.classList.toggle('bg-gray-900', isDark);
-      document.body.classList.toggle('text-white', isDark);
-      document.querySelectorAll('.bg-blue-50, .bg-white, .bg-gray-100').forEach(el => {
-        el.classList.toggle('bg-gray-800', isDark);
-        el.classList.toggle('text-white', isDark);
-      });
-    };
-    document.body.appendChild(darkToggle);
-  </script>
+
 </body>
 </html>
