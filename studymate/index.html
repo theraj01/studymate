@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyMate - YouTube Channel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      toggle.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .bg-iframe iframe {
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-white via-blue-50 to-white text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold text-blue-700">StudyMate</h1>
+      <button id="menu-toggle" class="lg:hidden focus:outline-none text-blue-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <nav id="menu" class="hidden lg:flex space-x-4">
+        <a href="#shortnotes" class="text-blue-700 font-semibold hover:underline">Short Notes</a>
+        <a href="#formulas" class="text-blue-700 font-semibold hover:underline">Formula Sheets</a>
+        <a href="https://www.youtube.com/@studymate9595" target="_blank" class="bg-red-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-red-700 transition">Subscribe</a>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="lg:hidden hidden px-6 pb-4">
+      <a href="#shortnotes" class="block py-2 text-blue-700 font-semibold hover:underline">Short Notes</a>
+      <a href="#formulas" class="block py-2 text-blue-700 font-semibold hover:underline">Formula Sheets</a>
+      <a href="https://www.youtube.com/@studymate9595" target="_blank" class="block py-2 bg-red-600 text-white text-center rounded-full font-semibold hover:bg-red-700 transition">Subscribe</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-20">
+    <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+      <h2 class="text-5xl font-bold mb-6 text-blue-800">Learn Smart. Learn with StudyMate.</h2>
+      <p class="text-xl mb-8 text-gray-700">Join thousands of students learning Science, Maths, and more with engaging, exam-oriented videos.</p>
+      <a href="#videos" class="bg-blue-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-700 text-lg transition">🎥 Watch Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Video -->
+  <section id="videos" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold mb-8 text-center">📌 Latest Video</h3>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full rounded-xl shadow-xl" src="https://www.youtube.com/embed?list=UUe3VrLQ0YmhZCUM3SCN6Lbw" title="StudyMate YouTube Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animation 1 -->
+  <div class="flex justify-center py-6 bg-white">
+    <dotlottie-wc src="https://lottie.host/febbbac5-d4ec-4855-9200-2aacce521ed4/BDVpaM7ZMF.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
+  </div>
+
+  <!-- About Section -->
+  <section class="relative py-16 bg-gradient-to-r from-white via-blue-50 to-white">
+    <div class="absolute inset-0 opacity-10">
+      <iframe src="https://embed.lottiefiles.com/animation/98745" frameborder="0" class="w-full h-full"></iframe>
+    </div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <h3 class="text-3xl font-bold mb-4 text-center text-blue-700">About StudyMate</h3>
+      <p class="text-gray-700 text-lg text-center">StudyMate is a YouTube channel dedicated to making complex subjects easy for high school and college students. With well-structured tutorials, real exam tips, and conceptual clarity, StudyMate is your go-to platform to master academics and boost your confidence.</p>
+    </div>
+  </section>
+
+  <!-- Short Notes Section -->
+  <section id="shortnotes" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-center text-blue-700">📘 Short Notes</h3>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-blue-50 p-5 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold text-blue-800 mb-2">Physics - Laws of Motion</h4>
+          <p class="text-gray-700 text-sm">Summary of Newton's laws, inertia, and motion equations with diagrams.</p>
+          <a href="downloads/physics-laws-of-motion.pdf" download class="mt-3 block text-center bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Download</a>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold text-blue-800 mb-2">Chemistry - Atomic Structure</h4>
+          <p class="text-gray-700 text-sm">Key concepts on Bohr’s model, quantum numbers, and orbitals.</p>
+          <a href="downloads/chemistry-atomic-structure.pdf" download class="mt-3 block text-center bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Download</a>
+        </div>
+        <div class="bg-blue-50 p-5 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold text-blue-800 mb-2">Maths - Trigonometry</h4>
+          <p class="text-gray-700 text-sm">Trigonometric ratios, identities, and formulas in compact form.</p>
+          <a href="downloads/maths-trigonometry.pdf" download class="mt-3 block text-center bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formula Sheets Section -->
+  <section id="formulas" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-center text-blue-700">📑 Formula Sheets</h3>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold text-blue-800 mb-2">Physics</h4>
+          <p class="text-gray-700 text-sm">Comprehensive list of formulas for motion, gravitation, work, and energy.</p>
+          <a href="downloads/physics-formula-sheet.pdf" download class="mt-3 block text-center bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Download</a>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold text-blue-800 mb-2">Chemistry</h4>
+          <p class="text-gray-700 text-sm">Mole concept, stoichiometry, periodic table shortcuts, and equations.</p>
+          <a href="downloads/chemistry-formula-sheet.pdf" download class="mt-3 block text-center bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Download</a>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold text-blue-800 mb-2">Maths</h4>
+          <p class="text-gray-700 text-sm">Formulas for algebra, geometry, calculus, and statistics.</p>
+          <a href="downloads/maths-formula-sheet.pdf" download class="mt-3 block text-center bg-blue-700 text-white py-2 px-4 rounded hover:bg-blue-800">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-10 text-center text-gray-800">💬 What Students Say</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="text-gray-800">"StudyMate helped me crack my board exams with confidence. The videos are simple and easy to understand!"</p>
+          <p class="mt-4 text-sm text-right font-semibold text-blue-600">– Priya Sharma</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <p class="text-gray-800">"Perfect channel for revision and understanding tricky concepts. Highly recommend it to all students."</p>
+          <p class="mt-4 text-sm text-right font-semibold text-blue-600">– Aman Verma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Animation 2 -->
+  <div class="flex justify-center py-8 bg-white">
+    <dotlottie-wc src="https://lottie.host/dd64337e-37ea-4b5e-a909-d58f89b35e82/Y4Cc9d9Fec.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 StudyMate. All rights reserved.</p>
+  </footer>
+
+  <!-- Smooth Scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <!-- Dark Mode Toggle -->
+  <script>
+    const darkToggle = document.createElement('button');
+    darkToggle.innerText = '🌓';
+    darkToggle.className = 'fixed bottom-4 right-4 z-50 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800';
+    darkToggle.onclick = () => {
+      const isDark = document.documentElement.classList.toggle('dark');
+      document.body.classList.toggle('bg-gray-900', isDark);
+      document.body.classList.toggle('text-white', isDark);
+      document.querySelectorAll('.bg-blue-50, .bg-white, .bg-gray-100').forEach(el => {
+        el.classList.toggle('bg-gray-800', isDark);
+        el.classList.toggle('text-white', isDark);
+      });
+    };
+    document.body.appendChild(darkToggle);
+  </script>
+</body>
+</html>
